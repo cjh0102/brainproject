@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/mainbackground"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/nameTextView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            android:text="뇌구조테스트"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center" >
+
+        <RadioGroup
+            android:id="@+id/radioGroup1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/radio0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:layout_x="48dp"
+                android:layout_y="116dp"
+                android:text="남성" />
+
+            <RadioButton
+                android:id="@+id/radio1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:layout_x="130dp"
+                android:layout_y="116dp"
+                android:text="여성" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:weightSum="10"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/nameEditText"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="7"
+            android:singleLine="true"
+            android:layout_marginLeft="50dp"
+            android:hint="이름입력하세요"
+            android:inputType="textPersonName" >
+        </EditText>
+    
+        <Button
+            android:id="@+id/commit"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:layout_marginRight="20dp"
+            android:text="분석" />
+    </LinearLayout>
+</LinearLayout>
